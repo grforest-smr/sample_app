@@ -14,20 +14,26 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get help" do
     get help_path
     assert_response :success
-    assert_select "title", "Help || GRF"
+    assert_select "title", "Помощь || GRF"
 
   end
 
   test "should get about" do
     get about_path
     assert_response :success
-    assert_select "title", "About || GRF"
+    assert_select "title", "О нас || GRF"
 
   end
 
   test "should get contact" do
     get contact_path
     assert_response :success
-    assert_select "title", "Контакт || GRF"
+    assert_select "title", "Контакты || GRF"
+  end
+
+  test "should get mortgage" do
+    get contact_path
+    assert_response :success
+    assert_select "title", "Ипотека || GRF"
   end
 end

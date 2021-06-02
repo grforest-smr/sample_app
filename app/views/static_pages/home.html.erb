@@ -1,73 +1,77 @@
-<!--<div class="center jumbotron">-->
-<!--  <h1>Тефлон-сервис</h1>-->
-
-
-
+<div class="center jumbotron mb-4 rounded-3 shadow-sm py-3">
+  <h1>Антириэлтор</h1>
+  <p>
+    Устали от действий так назвыаемых "риэлторов"? Хотите продать или купить квартиру самостоятельно? Тогда вам сюда
+  </p>
   <%#= link_to "Вход | регистрация!", signup_path, class: "btn btn-lg btn-primary" %>
-<!--</div>-->
-<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-  <h1 class="display-4 fw-normal">Тефлон-сервис</h1>
-  <p class="fs-5 text-muted">Выездной сервис по ремонту компьютерной и оргтехники</p>
 </div>
+
 <!--<p>-->
 
 <!--</p>-->
 
 <main>
   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+<!--Покупка-->
     <div class="col">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Ремонт компьютеров</h4>
+          <h4 class="my-0 fw-normal">Покупка</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">от ₽499</h1>
+<!--          <h1 class="card-title pricing-card-title">С чего начать?</h1>-->
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Бесплатная диагностика*</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
+            <li><%= link_to "Осмотр объекта", inspection_object_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Проверка объекта", checking_object_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Проверка продавца", checking_seller_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Договор купли-продажи", sales_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Ипотека", mortgage_path, {:class => 'me-3 py-2 text-dark'} %></li>
           </ul>
-          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Прайс-лист</button>
+          <%= link_to "Подробнее", purchase_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
         </div>
       </div>
     </div>
+<!--    Продажа-->
     <div class="col">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Ремонт ноутбуков</h4>
+          <h4 class="my-0 fw-normal">Продажа</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">от ₽499</h1>
+<!--          <h1 class="card-title pricing-card-title">С чего начать?</h1>-->
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Бесплатная диагностика*</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
+            <li>Подготовка к продаже</li>
+            <li>Показ объекта</li>
+            <li><%= link_to "Проверка покупателя", checking_buyer_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Договор купли-продажи", sales_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Ипотека", mortgage_path, {:class => 'me-3 py-2 text-dark'} %></li>
           </ul>
-          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          <%= link_to "Подробнее", sale_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
         </div>
       </div>
     </div>
+<!--    Аренда-->
     <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-primary">
-        <div class="card-header py-3 text-white bg-primary border-primary">
-          <h4 class="my-0 fw-normal">Ремонт оргтехники</h4>
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Аренда</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">от ₽299</h1>
+<!--          <h1 class="card-title pricing-card-title">#</h1>-->
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Бесплатная диагностика*</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
+            <li>Подготовка объекта</li>
+            <li><%= link_to "Договор ренты", rental_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li>Проверка арендаторов</li>
+            <li>Как быть с налоговой?</li>
+            <li>Вопросы и ответы</li>
           </ul>
-          <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          <%= link_to "Подробнее", rent_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
         </div>
       </div>
     </div>
+    <!--    конец Аренда-->
+
   </div>
 
-  <h2 class="display-6 text-center mb-4">Compare plans</h2>
-
+  <h2 class="display-6 text-center mb-4">Заглушка временная</h2>
 </main>

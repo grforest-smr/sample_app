@@ -1,26 +1,23 @@
-<div class="center jumbotron mb-4 rounded-3 shadow-sm py-3 bg-light p-5 table-bordered">
+
+<p class="mb-2"></p>
+<!--<div class="center jumbotron mb-5 rounded-3 shadow-sm py-3 bg-light p-5 table-bordered">-->
+<div class="row py-lg-5 text-center">
   <h1>Антириэлтор</h1>
   <p>
     Устали от действий "риэлторов"? Хотите самостоятельно произвести сделку с недвижимостью самостоятельно?
     Значит Вы пришли по адресу
   </p>
-  <%#= link_to "Вход | регистрация!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
-<!--<p>-->
-
-<!--</p>-->
-
 <main>
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+  <div class="row row-cols-1 row-cols-md-2 text-center">
 <!--Покупка-->
     <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header py-3">
+      <div class="card mb-2 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-light">
           <h4 class="my-0 fw-normal">Покупка</h4>
         </div>
         <div class="card-body">
-<!--          <h1 class="card-title pricing-card-title">С чего начать?</h1>-->
           <ul class="list-unstyled mt-3 mb-4">
             <li><%= link_to "Осмотр объекта", inspection_object_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Проверка объекта", checking_object_path, {:class => 'me-3 py-2 text-dark'} %></li>
@@ -28,18 +25,17 @@
             <li><%= link_to "Договор купли-продажи", sales_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Ипотека", mortgage_path, {:class => 'me-3 py-2 text-dark'} %></li>
           </ul>
-          <%= link_to "Подробнее", purchase_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
+          <%= link_to "Подробнее", purchase_path, {:class => 'w-100 btn btn-lg btn-light'} %>
         </div>
       </div>
     </div>
 <!--    Продажа-->
     <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header py-3">
+      <div class="card mb-2 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-light">
           <h4 class="my-0 fw-normal">Продажа</h4>
         </div>
         <div class="card-body">
-<!--          <h1 class="card-title pricing-card-title">С чего начать?</h1>-->
           <ul class="list-unstyled mt-3 mb-4">
             <li>Подготовка к продаже</li>
             <li>Показ объекта</li>
@@ -47,32 +43,28 @@
             <li><%= link_to "Договор купли-продажи", sales_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Ипотека", mortgage_path, {:class => 'me-3 py-2 text-dark'} %></li>
           </ul>
-          <%= link_to "Подробнее", sale_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
+          <%= link_to "Подробнее", sale_path, {:class => 'w-100 btn btn-lg btn-light'} %>
         </div>
       </div>
     </div>
 <!--    Аренда-->
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Аренда</h4>
-        </div>
-        <div class="card-body">
-<!--          <h1 class="card-title pricing-card-title">#</h1>-->
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Подготовка объекта</li>
-            <li><%= link_to "Договор ренты", rental_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
-            <li>Проверка арендаторов</li>
-            <li>Как быть с налоговой?</li>
-            <li>Вопросы и ответы</li>
-          </ul>
-          <%= link_to "Подробнее", rent_path, {:class => 'w-100 btn btn-lg btn-dark'} %>
-        </div>
-      </div>
-    </div>
-    <!--    конец Аренда-->
+<!--    <div class="col">-->
+<!--      <div class="card mb-4 rounded-3 shadow-sm">-->
+<!--        <div class="card-header py-3 bg-light">-->
+<!--          <h4 class="my-0 fw-normal">Аренда</h4>-->
+<!--        </div>-->
+<!--        <div class="card-body">-->
+<!--          <ul class="list-unstyled mt-3 mb-4">-->
+<!--            <li>Подготовка объекта</li>-->
+<!--            <li><%#= link_to "Договор ренты", rental_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>-->
+<!--            <li>Проверка арендаторов</li>-->
+<!--            <li>Как быть с налоговой?</li>-->
+<!--            <li>Вопросы и ответы</li>-->
+<!--          </ul>-->
+          <%#= link_to "Подробнее", rent_path, {:class => 'w-100 btn btn-lg btn-light'} %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
   </div>
-
-  <h2 class="display-6 text-center mb-4">Заглушка временная</h2>
 </main>

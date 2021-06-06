@@ -1,14 +1,16 @@
-<div class="container">
-  <header class="d-flex flex-wrap align-items-center justify-content-center navbar-fixed-top bg-white justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none navbar-brand">
+<div class="container navbar-fixed-top">
+  <header class="d-flex flex-wrap align-items-center justify-content-center bg-white justify-content-md-between py-3 mb-4 border-bottom border-top">
+    <div>
+    <a href="/" class="text-dark text-decoration-none navbar-brand">
         anti-realtor.ru
       </a>
+    </div>
 
-      <ul class="nav nav-pills">
+      <ul class="nav nav-pills justify-content-end">
         <li class="nav-item"><%= link_to "Главная", root_path, {:class => "nav-link px-2 text-dark"} %></li>
         <li class="nav-item"><%= link_to "Покупка недвижимости", purchase_path, {:class => "nav-link px-2 text-dark"} %></li>
         <li class="nav-item"><%= link_to "Продажа недвижимости", sale_path, {:class => "nav-link px-2 text-dark"} %></li>
-        <li class="nav-item"><%= link_to "Аренда", rent_path, {:class => "nav-link px-2 text-dark"} %></li>
+<!--        <li class="nav-item"><%#= link_to "Аренда", rent_path, {:class => "nav-link px-2 text-dark"} %></li>-->
   <!--      <li class="nav-item"><a href="#" class="nav-link">About</a></li>-->
       </ul>
   </header>

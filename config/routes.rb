@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/purchase', to: 'static_pages#purchase'
   get '/sale', to: 'static_pages#sale'
   get '/rent', to: 'static_pages#rent'
+  get '/presale', to: 'static_pages#presale'
+  get '/demonstration', to: 'static_pages#demonstration'
   # get ''
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

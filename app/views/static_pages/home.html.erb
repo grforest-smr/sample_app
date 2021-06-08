@@ -37,8 +37,8 @@
         </div>
         <div class="card-body">
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Подготовка к продаже</li>
-            <li>Показ объекта</li>
+            <li><%= link_to "Подготовка к продаже", presale_path, {:class => 'me-3 py-2 text-dark'} %></li>
+            <li><%= link_to "Показ объекта", demonstration_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Проверка покупателя", checking_buyer_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Договор купли-продажи", sales_contract_path, {:class => 'me-3 py-2 text-dark'} %></li>
             <li><%= link_to "Ипотека", mortgage_path, {:class => 'me-3 py-2 text-dark'} %></li>

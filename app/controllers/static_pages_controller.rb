@@ -43,4 +43,11 @@ class StaticPagesController < ApplicationController
 
   def rent
   end
+
+  def presale
+  end
+
+  def demonstration
+  end
+
 end
